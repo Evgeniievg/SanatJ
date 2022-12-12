@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@300;400;500&family=Source+Sans+Pro:ital@0;1&display=swap');
+
+
+.wrapper{
+    background-color: #fff;
+    background-image: url(/images/The_Nightwatch_by_Rembrandt_-_Rijksmuseum.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__container{
+}
+
+.mainpage{
+    padding: 0% 0;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    margin: 2% 20%;
+    border-radius: 10px;
+}
+
+.mainpage.shown{
+    background-color: rgb(231, 229, 229);
+    box-shadow: 0 0 10px 2px;
+}
+
+.results{
+    display: flex;
+    justify-content: center;
+}
+
+.users__results{
+    color: white;
+}
+
+
+.prestart__text{
+    color: white;
+    margin-top: 15%;
+}
+
+.main__pretext{
+    font-size: calc(16px + 30 * (100vw / 1440));
+    font-family: 'Raleway', sans-serif;
+}
+
+.info__pretext{
+    font-size: calc(12px + 12 * (100vw / 1440));
+    font-family: 'Raleway', sans-serif;
+}
+
+.question_number{
+    display: flex;
+    justify-content: center;
+}
+
+.number_text{
+    margin-top: 1%;
+    font-size: 20px;
+
+}
+
+.test-image{
+    margin: 1%;
+    max-width: 70%;
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+h2{
+    margin: 2% 0;
+    font-size: calc(12px + 12 * (100vw / 1440));
+    font-family: 'raleway', sans-serif;
+    font-weight: 500;
+}
+
+.btn__grid{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+.btn{
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.again__button{
+    padding: 2px 20px;
+    border: 2px solid #c6c6c6;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    font-size: calc(10px + 10 * (100vw / 1440));
+    font-family: 'Raleway', sans-serif;
+    transition: all ease 0.3s;
+}
+
+.again__button:hover{
+    background-color: rgb(233, 233, 138);
+}
+
+.start__btn, .next__btn{
+    padding: 2px 20px;
+    margin: 10px;
+    border: 2px solid #c6c6c6;
+}
+
+.start__btn{
+    margin: 10% 0;
+    width: 200px;
+    height: 40px;
+    font-size: calc(10px + 10 * (100vw / 1440));
+    font-family: 'Raleway', sans-serif;
+}
+.start__btn:hover{
+    background-color: rgb(233, 233, 138);
+}
+
+.opiton_group{
+    width: 60%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2%;
+}
+
+.option{
+    font-size: calc(10px + 10 * (100vw / 1440));
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    padding-top: 12px;
+    height: 50px;
+    transition: all ease 0.2s;
+    background-color: #fff;
+    border: 2px solid #c6c6c6;
+    border-radius: 10px;
+    margin: 2% 0
+}
+
+@media (max-width: 1024px) {
+    .prestart__text{
+        color: white;
+        margin-top: 20%;
+    }
+    .option{
+        height: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .prestart__text{
+        color: white;
+        margin-top: 25%;
+    }
+    .mainpage{
+        padding: 0% 0;
+        width: 80%;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        margin: 2% 10%;
+        background-color: rgba(210, 206, 206, 0);
+        border-radius: 10px;
+    }
+    
+    .opiton_group{
+        width: 60%;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 0.5%;
+    }
+    .option{
+        padding-top: 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    .prestart__text{
+        color: white;
+        margin-top: 40%;
+    }
+}
+
+
+
+
+.option:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+.repsponse_text{
+    font-size: calc(10px + 10 * (100vw / 1440));
+    font-family: 'raleway', sans-serif;
+    line-height: 1.1;
+    margin: 2%;
+    padding-bottom: 1%;
+}
+
+i{
+    color: green;
+}
+
+.repsponse_text.wrong i{
+    color: rgb(171, 7, 7);
+}
+
+.result__number{
+    margin-top: 5%;
+}
+
+.interpretation{
+    font-size: calc(16px + 30 * (100vw / 1440));
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin: 5%;
+}
+
+.users__results{
+    font-size: calc(14px + 20 * (100vw / 1440));
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 100px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next__btn{
+    font-size: calc(10px + 10 * (100vw / 1440));
+    font-family: 'Raleway', sans-serif;
+    width: 200px;
+    height: 40px;
+    transition: all ease 0.2s;
+}
+
+.next__btn:hover{
+    background-color: aliceblue;
+}
+
+.hide{
+    display: none;
+}
+
+.active{
+    background-color: rgb(197, 210, 210);
+}
+
+.notright {
+    background-color: rgb(128, 0, 0);
+
+}
+
+.option.active:hover{
+    background-color: rgb(197, 210, 210);;
+}
+
+.right{
+    background-color: rgb(36, 160, 36);
+}
+.right:hover{
+    background-color: rgb(36, 160, 36);
+}
+
+.option.active.right:hover {
+    background-color: rgb(36, 160, 36);
+}
+
+.notright{
+    background-color: rgb(193, 46, 46);
+}
+
+.notright:hover {
+    background-color: rgb(193, 46, 46);
+}
+
+.option.active.notright:hover {
+    background-color: rgb(193, 46, 46);
+}
+
+
+.mainpage.shown.transparent {
+    background-color: transparent;
+    box-shadow: 0 0 0px 0px;
+}

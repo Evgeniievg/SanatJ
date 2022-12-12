@@ -1,0 +1,247 @@
+body{
+    height: 100%;
+}
+.wrapper{
+    background-color: #fff;
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainpage{
+    max-width: 100%;
+    height: 100%;
+    flex: 1 1 auto;
+}
+
+.mainpage_text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0;
+    font-size: calc(12px + 26 * (100vw / 1440));
+}
+
+.mainpage_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container{
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    margin-bottom: 4%;
+ }
+
+.image-wrapper{
+    position: relative;
+    width: 100%;
+    margin: 0% 0%;
+    transition: all ease 0.5s;
+}
+
+.image-wrapper:hover{
+    transform: scale(1.05);
+}
+
+
+.container_image{
+    position: relative;
+    width: 100%;
+    margin: 0% 10%;
+    border-radius: 20px;
+}
+
+
+.second-image{
+    position: relative;
+    opacity: 1;
+    cursor: pointer;
+    width: 30vw;
+    height: 20vw;
+    float: left;
+    padding: 0% 0%;
+    transition: all ease 0.3s;
+    border-radius: 20px;
+}
+
+
+.image-text{
+    height: 20vw;
+    cursor: pointer;
+}
+
+.main__text{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    left: 20%;
+    position:absolute;
+    top: 10%;
+    width: 100%;
+    font-size: calc(12px + 12 * (100vw / 1440));
+}
+
+.content-text{
+    color: #fff;
+    position: absolute;
+    bottom: 15%;
+    left: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: calc(10px + 12 * (100vw / 1440));
+    cursor: pointer;
+}
+
+.mainpage__lines{
+        display: block;
+        height: 16px;
+        width: 19px;
+        top: 10%;
+        right: 0;
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        float: right;
+        cursor: pointer;
+}
+
+.mainpage__lines .linem {
+    display: block;
+    height: 2px;
+    width: 100%;
+    border-radius: 0px;
+    background: rgb(250, 250, 250);
+    transition: all ease 0.3s;
+}
+
+.main__line1{
+    transform: rotate(45deg);
+}
+
+.main__line2{
+    transform: rotate(-50deg) translate(1px, -0.5px);
+}
+
+.footer-container{
+    padding-top: 3%;
+    background-color: #212121;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    color: rgb(200, 187, 187);
+}
+
+.contacts{
+    font-size: calc(12px + 14 * (100vw / 1440));
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mail{
+    padding: 10px 0px 80px 0;
+    font-size: calc(12px + 14 * (100vw / 1440));
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 900px) {
+    .second-image{
+        width: 29vw;
+        height: 20vw;
+    }
+    .text_main{
+        margin-bottom: 0%;
+    }
+}
+
+@media (max-width: 767px) {
+    .second-image{
+        width: 80vw;
+        height: 50vw;
+    }
+    .main__text{
+        top: 20%;
+        font-size: calc(14px + 16 * (100vw / 1440));
+    }
+    .content-text{
+        bottom: -120%;
+        font-size: calc(12px + 16 * (100vw / 1440));
+    }
+    .mainpage__lines{
+        top: 20%;
+    }
+}
+
+@media(max-width: 767px){
+    .hamburger-lines {
+        display: block;
+        height: 26px;
+        width: 32px;
+        top: 0;
+        right: 0;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        float: right;
+        cursor: pointer;
+      }
+      
+      .hamburger-lines .line {
+        display: block;
+        height: 3px;
+        width: 100%;
+        border-radius: 10px;
+        background: #ffffff;
+        transition: all ease 0.3s;
+      }
+      .menu__list{
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #212121;
+        background-image: url(/images/Rembrandt_Harmensz._van_Rijn_-_The_Return_of_the_Prodigal_Son.jpg);
+        opacity: 1;
+        padding: 30% 0px 30px 30%;
+        transition: all 0.5s ease;
+        transform: translate(-200%, 0);
+      }
+      .menu__list._active{
+        transform: translate(0%, 0);
+        transition: all 0.5s ease-in-out;
+      }
+      .menu__list > li{
+        margin: 0px 0px 30px 0px;
+        padding: 20px;
+        
+      }
+      .menu__list > li:last-child{
+        margin-bottom: 0;
+      }
+      .menu__link{
+        font-size: 32px;
+        text-align: center;
+      }
+      .hamburger-lines._active .line1{
+        opacity: 0;
+        transition: all ease 0.3s;
+      }
+      .hamburger-lines._active .line2{
+        transform: rotate(45deg) translateY(8.5px);
+        transition: all ease 0.3s;
+      }
+      .hamburger-lines._active .line3{
+        transform: rotate(-45deg) translateY(-8.5px);
+        transition: all ease 0.3s;
+      }
+}

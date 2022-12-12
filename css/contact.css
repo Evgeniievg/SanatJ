@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Source+Sans+Pro:ital@0;1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav, footer, header, aside {display: block;}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input, button, textarea {font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img{vertical-align: top;}
+
+body._lock{
+    overflow: hidden;
+}
+
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    background-color: #212121;
+    max-width: 100%;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #212121;
+}
+
+._container{
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.header__container{
+    display: flex;
+    min-height: 80%;
+    height: calc(25px + 52 * (100vw / 1440));
+    min-height: 40px;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    background-color:#212121;
+    position: relative;
+    z-index: 20;
+}
+
+.header__logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(16px + 12 * (100vw / 1440));
+    font-weight: 400;
+}
+
+.header__menu{
+    margin: 0% 0% 0% 25%;
+}
+
+@media (max-width: 767px){
+    .header__menu{
+        margin: 0% 0% 0% 14%;
+    }
+}
+
+@media (max-width: 500px){
+    .header__menu{
+        margin: 0% 0% 0% 7%;
+    }
+}
+
+
+.menu__list{
+    display: flex;
+}
+
+.menu__item:not(:last-child){
+    margin: 0 10% 0 0;
+}
+
+@media (max-width: 500px){
+    .menu__item:not(:last-child){
+        margin: 0 7% 0 0;
+    }
+    .menu__list{
+        flex-wrap: wrap;
+    }
+}
+
+.menu__link{
+    color: white;
+    font-size: calc(10px + 8 * (100vw / 1440));
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    transition: all ease 0.2s;
+}
+
+.menu__link:hover{
+    border-bottom: #ffffff 2px solid;
+    transition: all ease 0.2s;
+}
+
+.mainpage{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.mainpage__image{
+    position: relative;
+    min-width: 100%;
+    height: 100vh;
+}
+
+.image_main{
+    position: relative;
+    min-height: 100vh;
+    opacity: 0.3;
+    min-width: 100vw;
+}
+
+@media (max-width: 1200px){
+    .image_main{
+        left: -0%;
+    }
+}
+
+@media (max-width: 1024px){
+    .image_main{
+        left: -10%;
+    }
+}
+
+@media (max-width: 562px){
+    .image_main{
+        left: -40%;
+    }
+}
+
+@media (max-width: 362px){
+    .image_main{
+        left: -45%;
+    }
+}
+
+.mainpage__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text__main{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: calc(14px + 24 * (100vw / 1440));
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width: 767px){
+    .hamburger-lines {
+        display: block;
+        height: 26px;
+        width: 32px;
+        top: 0;
+        right: 0;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        float: right;
+        cursor: pointer;
+      }
+      
+      .hamburger-lines .line {
+        display: block;
+        height: 3px;
+        width: 100%;
+        border-radius: 10px;
+        background: #ffffff;
+        transition: all ease 0.3s;
+      }
+      .menu__list{
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #212121;
+        background-image: url(/images/Rembrandt_Harmensz._van_Rijn_-_The_Return_of_the_Prodigal_Son.jpg);
+        opacity: 1;
+        padding: 30% 0px 30px 30%;
+        transition: all 0.5s ease;
+        transform: translate(-200%, 0);
+      }
+      .menu__list._active{
+        transform: translate(0%, 0);
+        transition: all 0.5s ease-in-out;
+      }
+      .menu__list > li{
+        margin: 0px 0px 30px 0px;
+        padding: 20px;
+        
+      }
+      .menu__list > li:last-child{
+        margin-bottom: 0;
+      }
+      .menu__link{
+        font-size: 32px;
+        text-align: center;
+      }
+      .hamburger-lines._active .line1{
+        opacity: 0;
+        transition: all ease 0.3s;
+      }
+      .hamburger-lines._active .line2{
+        transform: rotate(45deg) translateY(8.5px);
+        transition: all ease 0.3s;
+      }
+      .hamburger-lines._active .line3{
+        transform: rotate(-45deg) translateY(-8.5px);
+        transition: all ease 0.3s;
+      }
+}

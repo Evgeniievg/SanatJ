@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>Sanat journal</title>
+</head>
+<body>
+    <div class="wrapper">
+            <div class="container">
+                <div class="header__container _container">
+                        <a href="#" class="header__logo">SANAT</a>
+                        <header class="header">
+                            <div class="hamburger-lines">
+                                <span class="line line1"></span>
+                                <span class="line line2"></span>
+                                <span class="line line3"></span>
+                            </div>  
+                        <nav class="header__menu menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Главная</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Материалы</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Контакты</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Поиск</a>
+                                </li>
+                            </ul>
+                        </nav>
+                </div>
+                <div class="mainpage swiper">
+                    <div class="mainpage-container swiper-wrapper">
+                        <div class="main__image swiper-slide">
+                            <div class="image__main">
+                                <img src="/images/unnamed2.jpg" alt="" class="image-main">
+                            </div>
+                            <div class="mainpage-text">
+                                <h2 class="mainpage-maintext">Ма Юань</h2>
+                                <h3 class="mainpage-secondText">Китайское искусство эпохи Сун</h3>
+                                <button class="mainpage-btn">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="main__image swiper-slide">
+                            <div class="image__main">
+                                <img src="/images/main-image2.jfif" alt="" class="image-main">
+                            </div>
+                            <div class="mainpage-text">
+                                <h2 class="mainpage-maintext">Османская тугра</h2>
+                                <h3 class="mainpage-secondText">Отражение жизни султанов</h3>
+                                <button class="mainpage-btn">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="main__image swiper-slide">
+                            <div class="image__main">
+                                <img src="/images/Борисов 4.jpg" alt="" class="image-main">
+                            </div>
+                            <div class="mainpage-text">
+                                <h2 class="mainpage-maintext">Борисов Мусатов</h2>
+                                <h3 class="mainpage-secondText">Символизм в живописи</h3>
+                                <button class="mainpage-btn">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="main__image swiper-slide">
+                            <div class="image__main">
+                                <img src="/images/Асса 2.jpg" alt="" class="image-main">
+                            </div>
+                            <div class="mainpage-text">
+                                <h2 class="mainpage-maintext">Асса</h2>
+                                <h3 class="mainpage-secondText">Новое советское кино</h3>
+                                <button class="mainpage-btn">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </header>
+        <div class="second-page">
+            <h2 class="secondpage-text">Избранные материалы</h2>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="/images/unnamed.jpg" alt="" class="second-image">
+                    <div class="image-text">
+                        <p class="secondimage-text">Живопись эпохи Сун</p>
+                        <h3 class="secondimage-maintext">Ма Юань</h3>
+                    </div>               
+                 </div>
+                <div class="image-wrapper">
+                    <img src="/images/main-image.jfif" alt="" class="second-image">
+                    <div class="image-text">
+                        <p class="secondimage-text">Отражение жизни султанов</p>
+                        <h3 class="secondimage-maintext">Османская тугра</h3>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="/images/Борисов 4.jpg" alt="" class="second-image">
+                    <div class="image-text">
+                        <p class="secondimage-text">Символизм в живописи</p>
+                        <h3 class="secondimage-maintext">Борисов-Мусатов</h3>
+                    </div>                
+                </div>
+                <div class="image-wrapper">
+                    <img src="/images/Асса 2.jpg" alt="" class="second-image">
+                    <div class="image-text">
+                        <p class="secondimage-text">Новое советское кино</p>
+                        <h3 class="secondimage-maintext">Асса</h3>
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <p class="contacts">Контакты для сотрудничества:</p>
+                <p class="mail">sanat.culture@gmail.com</p>
+            </div>
+        </footer>
+    </div>
+    <script src="/css/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+          var swiper = new Swiper(".mainpage", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+          effect: 'fade',
+        },
+        speed: 1000, 
+        slidersPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      </script>
+</body>
+</html>
