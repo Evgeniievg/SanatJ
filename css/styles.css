@@ -248,12 +248,12 @@ body._lock{
 
 .secondimage-text{
     font-weight: 400;
-    font-size: calc(10px + 12 * (100vw / 1440));
+    font-size: calc(16px + 14 * (100vw / 1440));
     margin-bottom: 5px;
 }
 
 .secondimage-maintext{
-    font-size: calc(10px + 12 * (100vw / 1440));
+    font-size: calc(16px + 14 * (100vw / 1440));
     font-weight: 700;
 }
 
