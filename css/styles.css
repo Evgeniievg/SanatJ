@@ -275,8 +275,8 @@ body._lock{
 
 @media (max-width: 767px){
     .second-image{
-        height: 300px;
-        width: 400px;
+        height: 400px;
+        width: 550px;
         object-fit: none;
         object-position: 50% 20%;
     }
@@ -284,8 +284,8 @@ body._lock{
 
 @media (max-width: 450px){
     .second-image{
-        height: 180px;
-        width: 300px;
+        height: 300px;
+        width: 400px;
         object-fit: none;
     }
 }
