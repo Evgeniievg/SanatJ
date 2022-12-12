@@ -280,12 +280,15 @@ body._lock{
         object-fit: cover;
         object-position: 50% 20%;
         border-radius: 8%;
+        margin: 2% 0;
     }
     .secondimage-text{
         font-size: calc(18px + 14 * (100vw / 1440));
+        padding-left: 10px;
     }
     .secondimage-maintext{
         font-size: calc(18px + 14 * (100vw / 1440));
+        padding-left: 10px;
     }
 }
 
@@ -296,12 +299,15 @@ body._lock{
         object-fit: cover;
         object-position: 50% 20%;
         border-radius: 8%;
+        margin: 2% 0;
     }
     .secondimage-text{
         font-size: calc(18px + 14 * (100vw / 1440));
+        padding-left: 10px;
     }
     .secondimage-maintext{
         font-size: calc(18px + 14 * (100vw / 1440));
+        padding-left: 10px;
     }
 }
 
@@ -310,7 +316,8 @@ body._lock{
         height: 450px;
         width: 300px;
         object-fit: cover;
-        border-radius: 10%;
+        border-radius: 25% 10%;;
+        margin: 4% 0;
     }
     .secondimage-text{
         font-size: calc(18px + 14 * (100vw / 1440));
