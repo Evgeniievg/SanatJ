@@ -266,10 +266,18 @@ body._lock{
     cursor: pointer;
 }
 
+@media (min-width: 1700px){
+    .second-image{
+        height: 600px;
+        width: 700px;
+    }
+}
+
 @media (max-width: 767px){
     .second-image{
         height: 300px;
         width: 400px;
+        object-fit: none;
     }
 }
 
@@ -277,6 +285,7 @@ body._lock{
     .second-image{
         height: 180px;
         width: 300px;
+        object-fit: none;
     }
 }
 
