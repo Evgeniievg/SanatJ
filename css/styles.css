@@ -278,6 +278,7 @@ body._lock{
         height: 300px;
         width: 400px;
         object-fit: none;
+        object-position: 50% 20%;
     }
 }
 
