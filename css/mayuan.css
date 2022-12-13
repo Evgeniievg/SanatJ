@@ -92,7 +92,7 @@ h3{
 .triple__image__first {
     object-fit: cover;
     width: 100%;
-    max-height: 100%;
+    height: 103vh;
 }
 
 .second-third{
@@ -111,7 +111,7 @@ h3{
     object-fit: cover;
     width: 100%;
     margin-top: 3%;
-    height: 43.9vh;
+    height: 50vh;
 }
 
 .literature{
