@@ -180,12 +180,12 @@ body._lock{
     position: relative;
     opacity: 0.7;
     cursor: pointer;
-    width: 100vh;
+    width: 40vw;
     height: 30vw;
     float: left;
     padding: 0% 3%;
     transition: all ease 0.3s;
-    margin-bottom: 5%;
+    margin: 5% 20%;
     object-fit: cover;
 }
 
@@ -194,37 +194,41 @@ body._lock{
     text-align: center;
     top: 0%;
     left: 0%;
+    margin: 0% 0% 0% 40%;
     color: white;
-    font-size: calc(14px + 18 * (100vw / 1440));
+    font-size: calc(12px + 18 * (100vw / 1440));
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
 }
 
 @media (max-width: 1024px){
     .second-image{
+        height: 600px;
         width: 90vw;
-        height: 50vw;
         float: none;
         left: 0%;
         object-fit: cover;
         border-radius: 80px;
+        margin: 5% 5% 5% 0%;
     }
-    .image-wrapper{
+    .content-text{
         margin: 0% 0% 0% 5%;
-        margin-bottom: 50px;
+        font-size: 32px;
     }
 }
 @media (max-width: 767px){
     .second-image{
         height: 600px;
-        width: 90%;
+        width: 90vw;
         object-fit: cover;
         object-position: 50% 20%;
         border-radius: 8%;
         border-radius: 50px;
+        margin: 5% 5% 5% 0%;
     }
-    .image-wrapper{
-        margin: 0% 0% 5% 5%;
+    .content-text{
+        margin: 0% 0% 0% 5%;
+        font-size: 28px;
     }
 }
 @media (max-width: 600px){
@@ -238,6 +242,10 @@ body._lock{
     .image-wrapper{
         margin: 0% 0% 5% 5%;
     }
+    .content-text{
+        margin: 0% 8% 0% 0%;
+        font-size: 28px;
+    }
 }
 @media (max-width: 450px){
     .second-image{
@@ -248,6 +256,10 @@ body._lock{
         border-radius: 50px;
 }   .image-wrapper{
     margin: 0% 0% 5% 5%;
+}
+.content-text{
+    margin: 0% 10% 0% 0%;
+    font-size: 20px;
 }
 }
 
