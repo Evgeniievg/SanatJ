@@ -201,15 +201,54 @@ body._lock{
 
 @media (max-width: 1024px){
     .second-image{
-        width: 70vw;
+        width: 90vw;
         height: 50vw;
         float: none;
         left: 0%;
+        object-fit: cover;
     }
     .image-wrapper{
+        margin: 0% 0% 0% 5%;
         margin-bottom: 50px;
     }
 }
+@media (max-width: 767px){
+    .second-image{
+        height: 600px;
+        width: 90%;
+        object-fit: cover;
+        object-position: 50% 20%;
+        border-radius: 8%;
+    }
+    .image-wrapper{
+        margin: 0% 0% 5% 5%;
+    }
+}
+@media (max-width: 600px){
+    .second-image{
+        height: 600px;
+        width: 90%;
+        object-fit: cover;
+        object-position: 50% 20%;
+        border-radius: 8%;
+    }
+    .image-wrapper{
+        margin: 0% 0% 5% 5%;
+    }
+}
+@media (max-width: 450px){
+    .second-image{
+        height: 450px;
+        width: 90%;
+        object-fit: cover;
+        object-position: 50% 20%;
+        border-radius: 8%;
+}   .image-wrapper{
+    margin: 0% 0% 5% 5%;
+}
+}
+
+
 
 .second-image:hover{
     opacity: 0.8;
