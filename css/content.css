@@ -185,7 +185,9 @@ body._lock{
     float: left;
     padding: 0% 3%;
     transition: all ease 0.3s;
+    margin-bottom: 5%;
 }
+
 
 .content-text{
     text-align: center;
