@@ -3,7 +3,7 @@
 
 .wrapper{
     background-color: #fff;
-    background-image: url(/images/The_Nightwatch_by_Rembrandt_-_Rijksmuseum.jpg);
+    background-image: url(../images/The_Nightwatch_by_Rembrandt_-_Rijksmuseum.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
