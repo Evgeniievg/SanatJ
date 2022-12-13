@@ -206,12 +206,12 @@ body{
     }
     .main__text{
         top: 20%;
-        font-size: 26px;
+        font-size: 22px;
         font-weight: 600;
     }
     .content-text{
         background-color: rgba(0, 0, 0, 0.4);
-        font-size: 22px;
+        font-size: 20px;
         bottom: -250%;
     }
 
