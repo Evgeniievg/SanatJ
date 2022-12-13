@@ -85,7 +85,7 @@ const questions = [
     question: 'Кто изображен на этой картине Серова?',
     answer: 'Европа',
     options: ["Европа", "Елена", "Калипсо", "Пенелопа"],
-    images:  ".images/1200px-Valentin_Serov_-_Похищение_Европы_-_Google_Art_Project.jpg",
+    images:  "./images/1200px-Valentin_Serov_-_Похищение_Европы_-_Google_Art_Project.jpg",
     correct: "Да, это та самая Европа!",
     wrong: "Нет, это Европа!",
     fullCor: '"Валентин Серов в своей работе использовал известный древнегреческий миф о похищении Европы Зевсом, явившимся к ней в образе быка',
