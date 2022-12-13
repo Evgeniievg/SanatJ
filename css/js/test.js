@@ -16,6 +16,9 @@ const userResults = document.querySelector('.results')
 const userPoints = document.querySelector('.users__results')
 const allQuestion = document.querySelector('.question__wrapper')
 const intResults = document.querySelector('.interpretation')
+const againBtn = document.querySelector('.again__button')
+
+
 
 const questions = [
     {
@@ -164,6 +167,7 @@ function startGame() {
     show(question_count)
 }
 
+
 function next(){
     nextQue()
     let userAnswer = document.querySelector('li.option.active').innerHTML
@@ -208,7 +212,6 @@ function finish() {
         userResults.classList.remove('hide')
         menu.classList.add('transparent')
         userPoints.innerHTML = 'Ваш результат:' + ' ' + point + ' ' + 'из' + ' ' + questions.length;
-        console.log(userPoints.innerHTML)
     }
     if (point <= 2) {
         intResults.innerHTML = 'Не стоит расстраиваться, возможно, в чем-то вы разбираетесь лучше.';
@@ -271,3 +274,15 @@ function checkAnswer() {
         } 
     }
 }
+
+
+againBtn.addEventListener('click', () => {
+    allQuestion.classList.remove('hide')
+    userResults.classList.add('hide')
+    menu.classList.remove('transparent')
+    underText.classList.add('hide')
+    question_count = -1;
+    point = 0;
+    next()
+}
+)
