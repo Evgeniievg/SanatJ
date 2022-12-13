@@ -206,6 +206,7 @@ body._lock{
         float: none;
         left: 0%;
         object-fit: cover;
+        border-radius: 80px;
     }
     .image-wrapper{
         margin: 0% 0% 0% 5%;
@@ -219,6 +220,7 @@ body._lock{
         object-fit: cover;
         object-position: 50% 20%;
         border-radius: 8%;
+        border-radius: 50px;
     }
     .image-wrapper{
         margin: 0% 0% 5% 5%;
@@ -230,7 +232,7 @@ body._lock{
         width: 90%;
         object-fit: cover;
         object-position: 50% 20%;
-        border-radius: 8%;
+        border-radius: 50px;
     }
     .image-wrapper{
         margin: 0% 0% 5% 5%;
@@ -242,7 +244,7 @@ body._lock{
         width: 90%;
         object-fit: cover;
         object-position: 50% 20%;
-        border-radius: 8%;
+        border-radius: 50px;
 }   .image-wrapper{
     margin: 0% 0% 5% 5%;
 }
