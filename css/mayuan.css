@@ -39,3 +39,18 @@
     margin-top: 3vh;
     height: 50vh;
 }
+
+@media (max-width: 767px) {
+    .triple__image__first {
+        height: 83vh;
+    }
+    
+    .triple__image__second{
+        height: 40vh;
+    }
+    
+    .triple__image__third{
+        height: 40vh;
+    }
+    
+}

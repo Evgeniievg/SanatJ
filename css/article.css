@@ -45,7 +45,7 @@ h3{
 }
 
 .content-text{
-    font-size: calc(16px + 12 * (100vw / 1440));
+    font-size: calc(16px + 8 * (100vw / 1440));
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.5px;
     line-height: 1.2;
