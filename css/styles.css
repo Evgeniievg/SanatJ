@@ -336,14 +336,6 @@ body._lock{
     transform: scale(1.02);
 }
 
-.footer-container{
-    background-color: #212121;
-    display: block;
-    justify-content: center;
-    text-align: center;
-    color: rgb(200, 187, 187);
-}
-
 .contacts{
     font-size: 22px;
     font-weight: 200;

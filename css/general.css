@@ -71,7 +71,8 @@ body._lock{
 
 .header__container{
     display: flex;
-    height: 10vh;
+    height: calc(25px + 30 * (100vw / 1440));
+    min-height: 40px;
     align-items: center;
     width: 90%;
     margin: 0 auto;
