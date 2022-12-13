@@ -215,7 +215,7 @@ function finish() {
     } else if (point <= 5) {
         intResults.innerHTML = 'Вы что-то знаете, но билет в музей бы не помешал.'
     } else if (point <= 8) {
-        intResults.innerHTML = ' <i >Неплохо! Живопись определенно не пустое место в вашей жизни </i>'
+        intResults.innerHTML = 'Неплохо! Живопись определенно не пустое место в вашей жизни'
     } else if (point <= 10) {
         intResults.innerHTML = 'Отличный результат! Сразу видно влюбленного в искусство человека.'
     } else if (point = 11) {
