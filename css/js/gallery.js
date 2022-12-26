@@ -63,7 +63,7 @@ magnify("myimage", 2);
 const circle = document.querySelectorAll('.circle')
 
 
-const magnifyBtn = document.querySelector('.glass__button')
+const magnifyBtn = document.querySelector('.glass__button_magnifier')
 magnifyBtn.addEventListener('click', function(){
  points++;
  if (points == 1){
@@ -89,5 +89,16 @@ magnifyBtn.addEventListener('click', function(){
 
 })
 
+const details = document.querySelector('.glass__button_details')
+details.addEventListener('click', function(){
+  points++;
+  if (points = 1) {
+  details.classList.add('off')
+  details.innerHTML = 'Детали'
+} else {
+  points = 0;
+  details.innerHTML = 'Детали' + 'активны'
+}
+})
 
 

@@ -116,12 +116,27 @@
     margin-top: 2%;
 }
 
+.glass-buttons{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .glass__button{
     width: 15vw;
     height: 10vh;
     font-size: 18px;
     word-wrap: break-word;
     transition: 0.4s all ease;
+}
+
+.glass__button_details{
+  background-color: rgb(241, 241, 157);
+  box-shadow: -2px 2px 5px rgb(225, 197, 197);
+}
+
+.glass__button_details.off{
+  background-color: rgb(238, 238, 238);
+  box-shadow: none;
 }
 
 .glass__button:hover{
