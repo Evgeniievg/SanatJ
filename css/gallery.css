@@ -57,7 +57,7 @@
 
 .circle:hover{
     transition: .2s;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(1.5px);
 }
 
 .circle.hidden{
@@ -70,11 +70,29 @@
 
 
 .gallery-image{
+  position: relative;
     margin: 2% 0;
     width: 100%;
     border-radius: 10px;
-    justify-content: center;
-    align-items: center;
+    cursor: pointer;
+}
+
+.img-magnifier-container.full{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-image.full{
+  margin: 0;
+  width: 70vw;
+}
+
+.header__container.full{
+  display: none;
 }
 
 
@@ -200,4 +218,3 @@
 .active{
     background-color: rgb(241, 241, 157);
 }
-
