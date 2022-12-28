@@ -11,29 +11,30 @@
     width: 60%;
     height: 100%;
     text-align: left;
-    align-items: center;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .img-magnifier-container {
     position: relative;
+    width: 100%;
 }
 
-.circles{
-    height: 100%;
-}
+.circle{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  transition: .3 all ease;
+  box-sizing: border-box;
+  border-radius: 70px;
+  border: solid 2px rgb(232, 227, 227);
+  z-index: 2;
 
+}
 
 .circle_woman{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    transition: .3 all ease;
-    box-sizing: border-box;
-    border-radius: 70px;
-    border: solid 2px rgb(232, 227, 227);
-    z-index: 2;
     left: 56%;
     margin-top: 8%;
     animation: bigger 1s ease alternate-reverse infinite;
@@ -41,14 +42,6 @@
 }
 
 .circle_name{
-  position: absolute;
-    width: 60px;
-    height: 60px;
-    transition: .3 all ease;
-    box-sizing: border-box;
-    border-radius: 70px;
-    border: solid 2px rgb(232, 227, 227);
-    z-index: 2;
     right: 8%;
     bottom: 28%;
     animation: name 1s ease alternate-reverse infinite;
@@ -92,7 +85,7 @@
 
 .gallery-image{
     margin: 2% 0;
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -122,6 +115,8 @@
 
 .glass-buttons{
   display: flex;
+  width: 100%;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 
