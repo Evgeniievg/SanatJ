@@ -61,6 +61,10 @@ function magnify(imgID, zoom) {
 let points = 0;
 magnify("myimage", 2);
 const circle = document.querySelectorAll('.circle')
+const circles = document.querySelector('.circles')
+const details = document.querySelector('.glass__button_details')
+
+
 
 
 const magnifyBtn = document.querySelector('.glass__button_magnifier')
@@ -73,8 +77,9 @@ magnifyBtn.addEventListener('click', function(){
   glass.classList.add('shown')
   magnifyBtn.innerHTML += ' ' + 'активно'
   magnifyBtn.classList.add('active')
-  circle[0].classList.add('hidden')
-  circle[1].classList.add('hidden')
+  circles.classList.add('hidden')
+  details.innerHTML = 'Детали'
+  details.classList.remove('active')
  } else {
   points = 0;
   let glass = document.querySelector('.img-magnifier-glass')
@@ -83,21 +88,30 @@ magnifyBtn.addEventListener('click', function(){
   myImage.style.cursor = 'auto'
   magnifyBtn.innerHTML = 'Увеличительное стекло'
   magnifyBtn.classList.remove('active')
-  circle[0].classList.remove('hidden')
-  circle[1].classList.remove('hidden')
+  circles.classList.remove('hidden')
  }
 
 })
 
-const details = document.querySelector('.glass__button_details')
+let detPoints = 0;
+
 details.addEventListener('click', function(){
-  points++;
-  if (points = 1) {
+  detPoints++;
+  if (detPoints == 1) {
   details.classList.add('off')
   details.innerHTML = 'Детали'
+  circles.classList.add('hidden')
+  details.classList.remove('active')
 } else {
-  points = 0;
-  details.innerHTML = 'Детали' + 'активны'
+  detPoints = 0;
+  details.innerHTML = 'Детали' + ' ' + 'активны'
+  details.classList.remove('off')
+  circles.classList.remove('hidden')
+  details.classList.add('active')
+  magnifyBtn.innerHTML = 'Увеличительное стекло'
+  magnifyBtn.classList.remove('active')
+  let glass = document.querySelector('.img-magnifier-glass')
+  glass.classList.remove('shown')
 }
 })
 

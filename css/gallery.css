@@ -85,6 +85,10 @@
   display: none;
 }
 
+.hidden{
+  display: none;
+}
+
 
 .gallery-image{
     margin: 2% 0;
@@ -129,12 +133,7 @@
     transition: 0.4s all ease;
 }
 
-.glass__button_details{
-  background-color: rgb(241, 241, 157);
-  box-shadow: -2px 2px 5px rgb(225, 197, 197);
-}
-
-.glass__button_details.off{
+.glass__button_details:hover{
   background-color: rgb(238, 238, 238);
   box-shadow: none;
 }
@@ -145,17 +144,28 @@
 }
 
 .popup__container{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    left: 0%;
-    top: -1000%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(126, 82, 82);
-    z-index: 5;
-    align-items: center;
-    transition: all ease 0.4s;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.8s ease;
+  transform: translate(0px, -100%);
+}
+
+.popup__body{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(126, 82, 82);
+  width: 50%;
+  align-items: center;
+  transition: all ease 0.8s;
 }
 
 .popup_close{
@@ -179,7 +189,9 @@
 }
 
 .on{
-  top: 0;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0);
 }
 
 
