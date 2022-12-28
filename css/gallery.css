@@ -24,48 +24,33 @@
 
 .circle{
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 10%;
+  height: 8.5%;
   transition: .3 all ease;
   box-sizing: border-box;
   border-radius: 70px;
   border: solid 2px rgb(232, 227, 227);
   z-index: 2;
-
+  animation: bigger 1s ease alternate-reverse infinite;
+  cursor: pointer;
 }
 
 .circle_woman{
     left: 56%;
     margin-top: 8%;
-    animation: bigger 1s ease alternate-reverse infinite;
-    cursor: pointer;
 }
 
 .circle_name{
     right: 8%;
     bottom: 28%;
-    animation: name 1s ease alternate-reverse infinite;
-    cursor: pointer;
-}
-
-@keyframes name {
-  100%{
-    right: 6%;
-    bottom: 27%;
-    width: 90px;
-    height: 90px;
-    border: solid 2px rgba(126, 82, 82);
-  }
 }
 
 @keyframes bigger {
 
     100%{
-        left: 54%;
-        margin-top: 7%;
-        width: 90px;
-        height: 90px;
-        border: solid 2px rgba(126, 82, 82);
+      width: 12%;
+      height: 10%;
+      border: solid 2px rgba(126, 82, 82);
     }
 }
 
