@@ -22,13 +22,14 @@
     width: 100%;
 }
 
+
 .circle{
   position: absolute;
   width: 10%;
-  height: 8.5%;
+  height: 8%;
   transition: .3 all ease;
   box-sizing: border-box;
-  border-radius: 70px;
+  border-radius: 100px;
   border: solid 2px rgb(232, 227, 227);
   z-index: 2;
   animation: bigger 1s ease alternate-reverse infinite;
@@ -41,8 +42,8 @@
 }
 
 .circle_name{
-    right: 8%;
-    bottom: 28%;
+    right: 5%;
+    bottom: 23%;
 }
 
 @keyframes bigger {
@@ -106,9 +107,9 @@
 }
 
 .glass__button{
-    width: 15vw;
+    width: 30%;
     height: 10vh;
-    font-size: 18px;
+    font-size: calc(10px + 12 * (100vw / 1440));
     word-wrap: break-word;
     transition: 0.4s all ease;
 }
@@ -121,6 +122,22 @@
 .glass__button:hover{
     background-color: rgb(241, 241, 157);
     box-shadow: -2px 2px 5px rgb(225, 197, 197);
+}
+
+@media (max-width: 1024px) {
+  .mainpage{
+    width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .mainpage{
+      width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .mainpage{
+      width: 90%;
+  }
 }
 
 .popup__container{
